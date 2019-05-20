@@ -1,5 +1,6 @@
 # PandoraBot-Telegram
 Pandorabot AIML 1.0 Platform interface for the Telegram Bot API.
+Example bot: https://t.me/AnnaChatBot
 
 # Build requirements
 * Gradle
