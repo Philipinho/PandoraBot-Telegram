@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class XMLUtil {
 
-    public static String readOutput(String XMLString){
+    public static String readOutput(String XMLString, String tagName){
         StringBuilder response = new StringBuilder();
         try {
             ByteArrayInputStream inputStream = new ByteArrayInputStream(XMLString.getBytes("UTF-8"));
@@ -21,7 +21,7 @@ public class XMLUtil {
             doc.getDocumentElement().normalize();
             Element element = doc.getDocumentElement();
 
-            response.append(element.getElementsByTagName("that").item(0).getTextContent());
+            response.append(element.getElementsByTagName(tagName).item(0).getTextContent());
         } catch (IOException | ParserConfigurationException | SAXException e){
             e.printStackTrace();
         }
