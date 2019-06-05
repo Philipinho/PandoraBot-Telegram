@@ -33,7 +33,7 @@ public class PandoraBot {
 
             String XMLResponse = Connection.doGETRequest(Utils.buildParams(params));
 
-            response.append(XMLUtil.readOutput(XMLResponse));
+            response.append(XMLUtil.readOutput(XMLResponse,"that"));
 
         } catch (IOException e){
             e.printStackTrace();
