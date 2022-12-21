@@ -1,9 +1,8 @@
-package com.litesoftwares;
+import api.Connection;
+import utils.ReadProperty;
+import utils.Utils;
+import utils.XMLUtil;
 
-import com.litesoftwares.api.Connection;
-import com.litesoftwares.utils.ReadProperty;
-import com.litesoftwares.utils.Utils;
-import com.litesoftwares.utils.XMLUtil;
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.HashMap;

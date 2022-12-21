@@ -1,4 +1,4 @@
-package com.litesoftwares.api;
+package api;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;

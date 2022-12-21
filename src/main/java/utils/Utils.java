@@ -1,4 +1,4 @@
-package com.litesoftwares.utils;
+package utils;
 
 import java.text.Normalizer;
 import java.util.Map;

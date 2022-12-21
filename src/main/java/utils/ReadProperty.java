@@ -1,4 +1,4 @@
-package com.litesoftwares.utils;
+package utils;
 
 import java.io.InputStream;
 import java.util.Properties;
@@ -8,7 +8,7 @@ public class ReadProperty {
 
     static {
         try{
-            InputStream inputStream = props.getClass().getResourceAsStream("/bot.properties");
+            InputStream inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("bot.properties");
             props.load(inputStream);
         } catch(Exception e){
             e.printStackTrace();
